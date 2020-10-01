@@ -1,0 +1,28 @@
+body{
+    background-color:black;
+    text-align:center;
+}
+h1{
+    color:darkkhaki;
+    font-family:lucida sans;
+    padding:10px;
+}
+h2{
+    color:pink;
+    font-family:sans-serif;
+}
+/*h3{
+    color:silver;
+}*/
+img{
+    width:400px;
+    height:400px;
+}
+.hov{
+    color:silver;
+    padding:10px;
+}
+.hov:hover{
+    color:green;
+}
+

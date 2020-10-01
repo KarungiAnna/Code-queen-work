@@ -1,0 +1,22 @@
+img {
+    width: 400px;
+}
+body{
+    text-align:center;
+}
+h1{
+    color:pink;
+}
+ul li{
+    text-align:center;
+    list-style-position:outside;
+  }
+  /*will ask how to align a list in the center*/
+  img{
+      border-style: dashed;
+  }
+  
+  
+
+ 
+ 
