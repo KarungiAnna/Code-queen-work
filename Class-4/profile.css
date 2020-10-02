@@ -1,0 +1,32 @@
+body {
+    background-color: aliceblue;
+    font-family: 'Calistoga', cursive;
+  }
+  
+  body > div {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 10px 10px #88888817;
+    border-radius: 10px;
+  }
+  
+  p {
+    font-family: 'David Libre', serif;
+    font-size: 20px;
+  }
+  
+  .profile-image {
+    border-radius: 150px 150px;
+  }
+  
+  .skills > h1, .follow > h1, .hobbies > h1 {
+    color: aquamarine;
+  }
+  .follow > ul{
+    display:inline-block;
+    text-align:left;
+  }
