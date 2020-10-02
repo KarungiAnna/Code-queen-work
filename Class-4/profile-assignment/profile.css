@@ -1,0 +1,85 @@
+img{
+    height:200px;
+    width: 200px;
+}
+.oned{
+    text-align: center;
+    background-color:lightgoldenrodyellow;
+    padding-left: 105px;
+    padding-right: 105px;
+    margin: auto;
+    width: 80%;
+    height: 365px;
+    box-shadow: 10px 10px #9e929217;
+    border-radius: 5x;
+}
+.column1{
+    margin-right: 30px;
+    float: right;  
+    background-color:lightgoldenrodyellow;
+    width: 40%;
+    height: 205px;
+    padding-right: 90px;
+    box-shadow: 10px 10px #9e929217;
+    border-radius: 5px;
+}
+.column2 {
+    margin-left: 30px;
+    float: left;  
+    background-color:lightgoldenrodyellow;
+    width: 40%;
+    height: 205px;
+    padding-left: 90px;
+    box-shadow: 10px 10px #9e929217;
+    border-radius: 5px;
+  }
+  .fourdiv{
+    text-align: center;
+    background-color:lightgoldenrodyellow;
+    padding-left: 105px;
+    padding-right: 105px;
+    /*padding-bottom: 80px;*/
+    margin: auto;
+    width: 80%;
+    height: 205px;
+    box-shadow: 10px 10px #9e929217;
+    border-radius: 5x;
+  }
+  .fourdiv > ul{
+    display:inline-block;
+    text-align:left;
+  }
+  body{
+    background-color:lavender;
+}
+  .hey{
+    font-family:Verdana;
+    text-align:center;
+    color:black;
+    padding-top: 10px;
+  }
+  h1{
+    font-family:Verdana;
+    text-align:center;
+    color:deeppink;
+    padding-top: 5px;
+  }
+  .profileimage{
+      border-radius: 170px 170px;
+  }
+  p{
+    font-family: 'Dosis', sans-serif;
+    font-size: large;
+    text-align:center; 
+  }
+  .fun{
+    font-family: 'Dosis', sans-serif;
+    font-size: large;
+}
+.google-link{
+  text-decoration: none;
+}
+
+
+
+  
