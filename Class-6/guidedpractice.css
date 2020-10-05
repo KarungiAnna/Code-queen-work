@@ -1,0 +1,22 @@
+.header {
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+.main-content {
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+.footer {
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+div .subtitle { font-family: cursive; }
+
+body, div * { margin: 0; }
+div { padding: 40px 0; }
+div h1 { margin-bottom: 16px; }
+div {
+    text-align: center;
+    font-family: sans-serif;
+}
+img{
+    width:150px;
+}
