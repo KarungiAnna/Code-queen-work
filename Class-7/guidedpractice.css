@@ -1,0 +1,30 @@
+body{
+    font-family: arial;
+}
+
+img {
+    width: 200px; 
+    clear:both;
+    margin-left:60px;
+    margin-top:25px;
+}
+li{
+    background:lightblue;
+    float: left;
+    margin-right:8px;
+    padding:8px;
+    
+}
+
+ul{
+    list-style: none;
+    overflow: auto;
+    
+}
+h1{
+    margin-left:40px;
+}
+p{
+     margin-left:40px;
+}
+
