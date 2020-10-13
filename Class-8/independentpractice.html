@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="independentpractice.css" />
+        <title>06.1 jQuery Whack-A-Mole</title>
+    </head>
+    <body>
+
+        <div class="game">
+            <div class="yard">
+                <img src="https://i.imgur.com/70uqcLG.png">
+            </div>
+            <div class="yard">
+                <button class="whack1">Whack Me!</button>
+                <img class="mole1" src="https://i.imgur.com/AmtqfIs.png">
+            </div>
+            <div class="yard">
+                <img src="https://i.imgur.com/70uqcLG.png">
+            </div>
+            <div class="yard">
+                <button class="whack2">Whack Me!</button>
+                <img class="moleTwo" src="https://i.imgur.com/AmtqfIs.png">
+                </div>
+            <div class="square">
+                <img src="https://i.imgur.com/70uqcLG.png">
+            </div>
+            <div class="square">
+                <img src="https://i.imgur.com/70uqcLG.png">
+            </div>
+            <div class="square">
+                <img src="https://i.imgur.com/70uqcLG.png">
+            </div>
+            <div class="square">
+                <img src="https://i.imgur.com/70uqcLG.png">
+            </div>
+            <div class="yard">
+                <button class="whack3">Whack Me!</button>    
+                <img class="thirdMole" src="https://i.imgur.com/AmtqfIs.png">
+            </div>
+            <button class="reset">Reset Moles</button>
+        </div>
+
+    </body>
+</html>
+<script>
+    $(".whack1").click(function(){
+    $(".mole1").hide();
+});
+    
+$(".whack2").click(function(){
+    $(".moleTwo").hide();
+});
+    
+$(".whack3").click(function(){
+    $(".thirdMole").hide();
+});
+    
+$(".reset").click(function(){
+    $("img").show();
+});
+</script>

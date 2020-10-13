@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="independentpractice2.css" />
+        <title>06.2 jQuery Funhouse</title>
+    </head>
+    <body>
+        <div class="row">
+        <div class="control">
+            <img class="garage-door-opener" src="https://img1.banggood.com/thumb/view/upload/2012/liangping/SKU092033%20(4).JPG">
+        </div>
+        <div>
+            <img class="garage-door" src="http://www.wayne-dalton.com/cards/wood-garage-door-100-series.jpg">
+        </div>
+        </div>
+        
+        <div class="row">
+            <div class="control">
+                <img class="pokeball" src="http://www.freeiconspng.com/uploads/pokeball-icon-10.jpg">
+            </div>
+            <div>
+                <img class="pikachu" src="http://suptg.thisisnotatrueending.com/archive/22400891/images/1357355738313.jpg">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="control">
+                <img class="light-switch" src="http://1.bp.blogspot.com/-eac-Y83or0Y/UBrUMaW_TsI/AAAAAAAAAJg/H-lLuPVgCwM/s1600/lightswitch.jpg">
+            </div>
+            <div>
+                <img class="light-bulb" src="https://tr2.cbsistatic.com/hub/i/r/2013/09/18/480b6c51-b7f0-46f7-938d-8975a1fbba02/thumbnail/770x578/700832a828a046628dfd771c3c8c8063/lightbulb-m2m_091813.jpg">
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+    $(".garage-door-opener").click(function() {
+        $(".garage-door").slideToggle();
+});
+
+$(".pokeball").click(function() {
+    $(".pikachu").fadeIn();  
+});
+
+$(".light-switch").click(function() {
+    $(".light-bulb").toggle();
+});
+</script>

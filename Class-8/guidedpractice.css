@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+}
+
+button {
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+img {
+    height: 300px;
+}
+
+

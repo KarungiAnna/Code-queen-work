@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cats vs Dogs</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="./guidedpractice.css" />
+    </head>
+    <body>
+        <button class="hideCats">Hide Cats</button>
+        <button class="hideDogs">Hide Dogs</button>
+        
+        <div class="container">
+            <img class="catPic" src="http://www.catster.com/wp-content/uploads/2017/06/small-kitten-meowing.jpg">
+            <img class="dogPic" src="https://www.nationalgeographic.com/content/dam/animals/thumbs/rights-exempt/mammals/d/domestic-dog_thumb.jpg">
+        </div>
+    </body>
+</html>
+<script>
+$(".hideCats").click(function() {
+    $(".catPic").hide();
+  });
+  
+  $(".hideDogs").click(function() {
+    $(".dogPic").hide();  
+  });
+  </script>
