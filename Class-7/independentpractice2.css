@@ -1,0 +1,75 @@
+.sample1{
+    display:flex;
+    justify-content:center;
+    border:2px solid gray;
+    margin-top:-2px;
+    margin-bottom:6px;
+    margin-right:-1px;
+    margin-left:-1px;
+    padding-left:18px;
+    padding-right:18px;
+    padding-top:3px;
+    padding-bottom:3px;
+    background-color:gray;
+}
+.sample1 .item{
+    margin-left:10px;
+    border:0px solid black;
+    padding:8px;
+    color:white;
+    background-color:black;
+    font-size:15px;
+}
+.con3{
+   border:3px solid gray;
+    background-color:white;
+    padding:10px;
+     
+}
+/*sample 2*/
+.sample2{
+     display:flex;
+    justify-content:space-around;
+    font-size:15px;
+    border:3px solid grey;
+    padding:9px;
+}
+.sample2 .item{
+  margin-right:10px;
+    border:0px solid black;
+    padding:6px;
+    color:red;
+    background-color:grey;  
+}
+/*sample 3*/
+.sample3{
+    display:flex;
+    justify-content:flex-end;
+    border:3px solid grey;
+     border:2px solid gray;
+    margin-top:-47px;
+    margin-bottom:-45px;
+    margin-right:-45px;
+    margin-left:-47px;
+    padding-left:2px;
+    padding-right:2px;
+    padding-top:5px;
+    padding-bottom:49px;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR0n5V7lu71Ue35mpGTLCrXmtl3ZuB4ZPsT8Q&usqp=CAU");
+   
+}
+.sample3 .item{
+    margin-left:5px;
+    margin-bottom:35px;
+    margin-top:-4px;
+    border:0px solid black;
+    padding:8px;
+    color:black;
+    background-color:white;
+    font-size:15px;
+}
+.con4{
+   border:3px solid gray;
+    background-color:white;
+    padding:48px; 
+}
