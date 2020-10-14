@@ -1,0 +1,16 @@
+body {
+    background-color: blue;
+    color: yellow;
+}
+
+#change {
+    display: block;
+    margin-top: 15px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: yellow;
+}
+img{
+    width:350px;
+    
+}
