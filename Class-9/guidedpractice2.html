@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="guidedpractice2.css" />
+        <title>06.4 Guided Practice Whack-A-Mole</title>
+    </head>
+    <body>
+
+        <div class="game">
+            <div class="yard">
+                <img src="https://i.imgur.com/70uqcLG.png">
+            </div>
+            <div class="yard">
+                <img class="mole1" src="https://i.imgur.com/AmtqfIs.png">
+            </div>
+            <div class="yard">
+                <img src="https://i.imgur.com/70uqcLG.png">
+            </div>
+            <div class="yard">
+                <img class="moleTwo" src="https://i.imgur.com/AmtqfIs.png">
+                </div>
+            <div class="square">
+                <img src="https://i.imgur.com/70uqcLG.png">
+            </div>
+            <div class="square">
+                <img src="https://i.imgur.com/70uqcLG.png">
+            </div>
+            <div class="square">
+                <img src="https://i.imgur.com/70uqcLG.png">
+            </div>
+            <div class="square">
+                <img src="https://i.imgur.com/70uqcLG.png">
+            </div>
+            <div class="yard">
+                <img class="thirdMole" src="https://i.imgur.com/AmtqfIs.png">
+            </div>
+            <button>Reset</button>
+        </div>
+
+    </body>
+</html>
+<script>
+    $(".mole1").dblclick(function(){
+    $(".mole1").hide();
+    $(".moleTwo").show();
+    $(".thirdMole").show();
+});
+    
+$(".moleTwo").mouseenter(function(){
+    $(".moleTwo").hide();
+    $(".mole1").show();
+    $(".thirdMole").show();
+}); 
+    
+$(".thirdMole").mouseleave(function(){
+    $(".thirdMole").hide();
+    $(".mole1").show();
+    $(".moleTwo").show();
+});
+    
+$("button").click(function(){
+    $(".mole1").show();
+    $(".moleTwo").show();
+    $(".thirdMole").show();
+});
+</script>

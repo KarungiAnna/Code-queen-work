@@ -1,0 +1,14 @@
+.box {
+    width: 220px;
+    height:220px;
+    border: solid 2px grey;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.parent {
+    display: flex;
+    justify-content: space-around;
+}

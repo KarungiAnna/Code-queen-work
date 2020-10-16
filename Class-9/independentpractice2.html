@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="independentpractice2.css" />
+        <title>06.4 jQuery Event Handlers: 4 Boxes</title>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="top-left box">
+                <p class="clickBox">Click on me</p>
+            </div>
+            <div class="top-right box">
+                <p class="dblClickBox">Double click on me</p>
+            </div>
+        </div>
+        <div class="parent">
+            <div class="bottom-left box">
+                <p class="hoverBox">Hover here</p>
+            </div>
+            <div class="bottom-right box">
+                <p class="mouseOnBox">Put your mouse on me!</p>
+            </div>
+             <div class="fifth box">
+                <p class="mouseDown">Press the mouse button!</p>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+    $(".top-left").click(function(){
+   $(".clickBox").text("Thank you for clicking on me!");
+   $(".top-left").css("background-color", "green");
+});
+
+$(".top-right").dblclick(function(){
+   $(".dblClickBox").text("Thank you for double-clicking on me!");
+   $(".top-right").css("background-color", "blue");
+});
+$(".bottom-left").hover(function(){
+   $(".hoverBox").text("Thank you for hovering on me!");
+   $(".bottom-left").css("background-color", "yellow");
+});
+$(".bottom-right").mouseenter(function(){
+   $(".mouseOnBox").text("Thank you for visiting!");
+   $(".bottom-right").css("background-color", "white");
+});
+$(".bottom-right").mouseleave(function(){
+   $(".mouseOnBox").text("Come again soon!");
+   $(".bottom-right").css("background-color", "red");
+});
+$(".fifth").mousedown(function(){
+   $(".mouseDown").text("Bye!");
+   $(".fifth").css("background-color", "pink");
+});
+</script>
