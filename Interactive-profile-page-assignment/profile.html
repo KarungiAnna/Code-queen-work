@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/75fa6b2f1c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+    <link href="./profile.css" rel="stylesheet">
+    <title>PROFILE</title>
+</head>
+<body>
+        <div class="oned"><!--1st div-->
+        <h1 class="hey">Hey, I'm Hannah.</h1>
+        <img class="profileimage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSyj44iUOBqvcQrQtv_bH4NbU0RgaB_vqbMHw&usqp=CAU">
+        <p class="p1">My name is Hannah perry. I was born in Los Angeles, california and I am a software developer.</p>
+        <a class="google-link" href="https://google.com"><p class="p1">Search Hannah on google</p></a>
+    </div> <br>
+       <div class="column1">
+        <h1 class="hb">My hobbies.</h1>
+        <p class="p2">Reading.<i class="fas fa-book"></i></p>
+        <p class="p2">Watching movies.<i class="fas fa-film"></i></p>
+       </div>
+       <div class="column2">
+        <h1 class="sk">My skills.</h1>
+        <p class="p3">Front-end developer.<i class="fas fa-laptop-code"></i></p>
+        <p class="p3">Blogger.<i class="fab fa-blogger"></i></p> 
+        </div><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="fourdiv">
+            <h1 class="fl">Follow me @</h1>
+            <ul>
+                <li class="fun"><a href="https://github.com">
+                    <i class="fab fa-github-square"></i>
+                  </a>Github</li><br>
+                <li class="fun"><a href="https://facebook.com">
+                    <i class="fab fa-facebook-square"></i></a> Facebook</li><br>
+                <li class="fun"><a href="https://instagram.com">
+                    <i class="fab fa-instagram-square"></i>
+                </a>Instagram</li><br>
+            </ul>
+        </div>
+</body>
+</html>
+<script> 
+    //Hey am hannah
+    $(".hey").mousedown(function() {
+      $(".hey").css("color","blue");
+});
+    $(".hey").mouseup(function() {
+      $(".hey").css("color","black");
+});
+
+    //Body change background color
+    $("body").mouseenter(function() {
+      $("body").css("background-color","#71c9f8");
+});
+    $("body").mouseleave(function() {
+      $("body").css("background-color","#1da1f2");
+});
+//Profile image resizing
+    $("img").dblclick(function(){
+      $("img").css("width", "270px");  
+      $("img").css("height", "270px");
+      $(".p1").hide();
+      $(".oned").css("background-color","white");
+      $(".hey").text("Hannah Perry");
+});
+    $("img").click(function(){
+      $("img").css("width", "200px");  
+      $("img").css("height", "200px");
+      $(".p1").show();
+      $(".oned").css("background-color","lightgoldenrodyellow");
+      $(".hey").text("Hey, I'm Hannah."); 
+});
+//My hobbies
+$(".column1").mouseenter(function(){
+    $(".hb").css("color","limegreen");
+    $(".column1").css("background-color","white");
+    $(".p2").fadeIn("slow");
+});
+$(".column1").mouseleave(function(){
+    $(".hb").css("color","deeppink");
+    $(".column1").css("background-color","lightgoldenrodyellow");
+    $(".p2").fadeOut(3000);
+});
+
+//My skills
+$(".column2").mouseenter(function(){
+    $(".sk").css("color","limegreen");
+    $(".column2").css("background-color","white");
+    $(".p3").slideUp("slow");
+});
+$(".column2").mouseleave(function(){
+    $(".sk").css("color","deeppink");
+    $(".column2").css("background-color","lightgoldenrodyellow");
+    $(".p3").slideDown("slow");
+});
+
+//Follow me @
+$(".fourdiv").mouseenter(function(){
+    $(".fl").css("color","limegreen");
+    $(".fourdiv").css("background-color","white");
+    $(".fun").toggle("slow");
+});
+//$(".fourdiv").mouseleave(function(){
+    //$(".fl").css("color","deeppink");
+    //$(".fourdiv").css("background-color","lightgoldenrodyellow");
+    //$(".fun").slideDown("slow", 0.15);
+//});
+//google link
+ //$(".p1").mousedown(function(){
+   //.. $(".p1").css("color","cyan");
+//});
+//$(".p11").mouseup(function(){
+   // $(".p1").css("color","blue");
+//});
+</script>
