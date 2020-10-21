@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>7.4 GP: Cartoon Speech Bubble</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="./guidedpratice2.css" />
+    </head>
+    <body>
+
+        <div class="cartoon-area">
+            <img class="cartoon" src="https://i.imgur.com/1NwGrvK.png">
+            <img class="bubble" src="https://i.imgur.com/IfNLX0S.png">
+            <div class="speech-bubble">
+                Are you sure I make a difference?
+            </div>
+        </div>
+        <div class="input">
+            <input class="speech">
+            <button class="ask">Ask!</button>
+        </div>
+        <div class="history"></div>
+    </body>
+</html>
+<script>
+    $(".ask").click(function() {
+    let question = $(".speech").val();
+    $(".speech-bubble").text(question);
+    // Add your code below:
+$(".history").append("<p>"+question+"</p>");
+console.log(question);
+});
+</script>

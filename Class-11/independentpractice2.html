@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>07.4 Independent Practice: .append() and Concatenation</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="./independentpractice2.css" />
+    </head>
+    <body>
+        <h1> College Packing List</h1>
+        <img src="https://www.sportsgiftstore.com/images_products/mit_engineers_garden_banner_84153sma.jpg">
+        <div class="main">
+            <input class="to-pack-input">
+            <button class="to-pack-button">Pack this!</button>
+            <input class="to-enroll-input">
+            <button class="to-enroll-button">Classes to enroll in!</button>
+        </div>
+        <ul class="packing-list">
+        </ul>
+        <ol class="course-list">
+        </ol>
+    </body>
+</html>
+<script>
+    $(".to-pack-button").click(function(){
+ let stuff = $(".to-pack-input").val();
+  $(".packing-list").append("<li>"+"I'm going to pack "+stuff+"</li>");  
+});
+//second
+$(".to-enroll-button").click(function(){
+ let enroll = $(".to-enroll-input").val();
+  $(".course-list").append("<li>"+"I'm going to enroll in  "+enroll+"</li>");  
+});
+</script>

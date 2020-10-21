@@ -1,0 +1,41 @@
+.cartoon-area {
+    position: relative;
+    width: 80%;
+}
+
+.cartoon {
+    width: 100%;
+}
+
+.bubble {
+    position: absolute;
+    width: 65%;
+    top: 6%;
+    left: 6%;
+}
+
+.speech-bubble {
+    position: absolute;
+    font-size: 20px;
+    width: 40%;
+    top: 9%;
+    left: 20%;
+}
+
+.history {
+    text-align: center;
+    width: 300px;
+}
+
+.input {
+    text-align: center;
+}
+
+.speech {
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+.ask {
+    font-size: 28px;
+}

@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+    color:#c4053b;
+}
+.to-pack-button{
+    background-color: white;
+   color: #c4053b;
+   margin-right:20px ;
+}
+.to-enroll-button{
+  background-color:#c4053b;
+    color:white;
+}
+
+img {
+   width: 300px; 
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom:10px;
+}
