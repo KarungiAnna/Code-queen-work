@@ -1,0 +1,29 @@
+
+
+/* **Do not touch the code below** */
+
+body {
+    text-align: center;
+    justify-content: space-between;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    display:none;
+    position: center;  
+}
+
+input {
+    margin: 15px;
+    padding: 5px;
+    width: 200px;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}

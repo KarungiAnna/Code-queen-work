@@ -1,0 +1,20 @@
+img {
+    width: 300px;
+}
+
+.logo {
+    width: 100px;
+}
+
+input {
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+.messages {
+    border: groove grey 2px;
+    height: 200px;
+    margin: 10px;
+    padding: 5px;
+}

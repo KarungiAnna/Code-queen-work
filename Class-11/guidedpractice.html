@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>7.3 Input Demo: Comments Section </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="guidedpractice.css" />
+    </head>
+    <body>
+        <img class="logo" src="http://t3me.com/en/wp-content/uploads/sites/2/2018/02/insta.jpg">
+        <br>
+        <img src="https://i.pinimg.com/736x/87/b9/92/87b9929c1be158de2019da5fc17ca994--friendship-photography-artsy-pics.jpg">
+        <p> Comment:
+            <input class="input1" placeholder="comment">
+        </p>
+        <button>Submit</button>
+        <div class="messages">
+        </div>
+    </body>
+</html>
+<script>
+    $("button").click(function() {
+let comments = $(".input1").val();
+alert(comments);
+$(".messages").text(comments);
+
+});
+</script>
