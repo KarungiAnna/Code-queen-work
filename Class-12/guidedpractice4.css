@@ -1,0 +1,18 @@
+body {
+    font-family: helvetica;    
+}
+
+span {
+    margin-left: 5px;    
+}
+
+button {
+    background-color: #3cba54;   
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
+
+h2 {
+    color: #3cba54;    
+}

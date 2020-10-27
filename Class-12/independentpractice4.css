@@ -1,0 +1,22 @@
+body {
+    font-family: helvetica;    
+    background: url("https://countrynavigator.com/wp-content/uploads/iStock-494617082.jpg") no-repeat ;
+    background-size: cover;
+    color: white;
+}
+
+span {
+    margin-left: 5px;    
+}
+
+button {
+    background-color: #A87DD6;   
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
+
+h2 {
+    color: #A87DD6; 
+    text-align: center;
+}

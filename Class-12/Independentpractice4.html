@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="./independentpractice4.css" />
+   
+        <title>My To Do List</title>
+    </head>
+    <body>
+    <h2> This Week's To Do List</h2>
+    
+    <h4>
+        New Task: <input type="text" class="newToDo"  >
+        <button class="addNew">Add Task to List</button>
+    </h4>
+    
+    <h3>To Do: <span class="numTasks"></span></h3>
+    <ol class="ToDoList">
+    
+    </ol>
+    </body>
+</html>
+<script>
+    let newTasks =[];
+
+$(".addNew").click(function() {
+    let newTask = $(".newToDo").val();
+     newTasks.push(newTask);
+    $(".newToDo").val("");
+    
+    for(let newTask of newTasks){
+    $(".ToDoList").append(`<li>  ${newTask} </li>`);
+        let Tasks= $("li").length;
+        $(".numTasks").text(Tasks);   
+         newTasks.pop(newTask);
+        
+   
+        
+    }
+   
+   
+});
+</script>
