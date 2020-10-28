@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>08.2 Multiple Conditions: CodeGram</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="independentpractice2.css" />
+        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    </head>
+    <body>
+        <h1>CodeGram: Choose a filter.</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg">
+        <p> Choose one of the following filters: Harlem, Bushwick, SOMA, Sunset or Anna. </p>
+        <input placeholder="Filter Name">
+        
+        <button class="applyFilter"> Apply filter </button>
+        <div>
+            <button class="reset">Reset</button>
+        </div>
+        
+    </body>
+</html>
+<script>
+    let selectedFilter;
+
+$(".applyFilter").click(function() {
+    let filter = $("input").val();
+    
+  // Write if-statements around the following lines.
+    // What is the condition? what should execute if the condition is met?
+    // Let's do the first example together. Below is the code block we want to execute if the user types Harlem in the input. Make sure to uncomment the jQuery code.
+if( filter === "Harlem"){
+          $("img").css("filter", "contrast(115%) brightness(120%)");
+}
+
+    // Below is the code block we want to execute if the user types Bushwick in the input. 
+  else if(filter === "Bushwick"){  
+         $("img").css("filter", "contrast(50%) brightness(180%)");}
+    
+    // Below is the code block we want to execute if the user types SOMA in the input. 
+    else if(filter === "SOMA"){   
+         $("img").css("filter", "grayscale(50%) hue-rotate(10deg)");}
+        
+    // Below is the code block we want to execute if the user types Sunset in the input. 
+    else if(filter === "Sunset"){   
+         $("img").css("filter", "contrast(115%) hue-rotate(-10deg) saturate(180%)");}
+    
+    else if(filter === "Anna"){
+               $("img").css("filter"," blur(2px)"); }
+    else{
+        alert("Wrong filter");
+    }
+    
+});
+
+$(".reset").click(function() {
+    $("img").css("filter", "");
+});
+
+</script>
