@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>8.1 Conditionals Guided Practice</title>
+    </head>
+    <body>
+        <input class="password" placeholder="password please">
+        <button class="submit">Submit</button>
+    </body>
+</html>
+<script>
+$(".submit").click(function() {
+    let inputValue = $(".password").val();
+    if (inputValue==="Open Sesame"){
+    alert("Ok");
+    } else{
+      alert(inputValue);  
+    }
+    
+});
+</script>
