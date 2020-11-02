@@ -94,11 +94,12 @@
     },
 ];
           $(document).ready(function(){
-          $.each(students, function(index, value){
-            $(".card").append("<p>"+students[index].id+"</p>");
-            $(".card").append("<p>"+index.name+"</p>");
-            $(".card").append("<p>"+index.age+"</p>");
-            console.log(students[index])   
+          $.each(students, function(i){
+            var templateString = '<div class="card"><p>' +"<h3>STUDENT CARD</h3>"+"<b>Name: </b>"+ students[i].name + '</p><p>' +"<b>Id: </b>"+ students[i].id + '</p><p>' +"<b>Age: </b>"+ students[i].age + '</div>';
+            $('#result').append(templateString);
+            //$(".card").append("<p>"+index.name+"</p>");
+            //$(".card").append("<p>"+index.age+"</p>");
+            console.log(students[i])   
      });
     
 
@@ -112,40 +113,14 @@
     </div>
  
    <!--card-->
-   <div class="card">
+   <div>
     <div class="des">
- <p>Student details</p>
-    <div id="result"></div>
+      <h2>STUDENT DETAILS</h2>
+    <div id="result">
+    </div>
     </div> 
   </div>
   <!--card-->
-  <div class="card">
-    <div class="des">
- <p>Student details</p>
-    <div id="result"></div>
-    </div> 
-  </div>
-  <!--card-->
-  <div class="card">
-    <div class="des">
- <p>Student details</p>
-    <div id="result"></div>
-    </div> 
-  </div>
-  <!--card-->
-  <div class="card">
-    <div class="des">
- <p>Student details</p>
-    <div id="result"></div>
-    </div> 
-  </div>
-  <!--card-->
-  <div class="card">
-    <div class="des">
- <p>Student details</p>
-    <div id="result"></div>
-    </div> 
-  </div>
   <!--end of main-->  
 </body>
 </html>
