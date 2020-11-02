@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Student cards</title>
+<link rel="stylesheet" href="first.css" />
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+  const students = [
+    {
+      id: 1,
+      name: "Mark Alonso",
+      age: 18,
+      subjects: [
+        {
+          id: 1,
+          name: "Math",
+          score: 60,
+        },
+        {
+          id: 2,
+          name: "English",
+          score: 85,
+        },
+      ],
+    },
+    {
+      id: 2,
+      name: "Paul Ryan",
+      age: 19,
+      subjects: [
+        {
+          id: 1,
+          name: "Math",
+          score: 78,
+        },
+        {
+          id: 2,
+          name: "English",
+          score: 75,
+        },
+      ],
+    },
+    {
+      id: 3,
+      name: "Jackie Anite",
+      age: 21,
+      subjects: [
+        {
+          id: 1,
+          name: "Math",
+          score: 90,
+        },
+        {
+          id: 2,
+          name: "English",
+          score: 80,
+        },
+      ],
+    },
+    {
+      id: 4,
+      name: "Anita Allain",
+      age: 18,
+      subjects: [
+        {
+          id: 1,
+          name: "Math",
+          score: 71,
+        },
+        {
+          id: 2,
+          name: "English",
+          score: 45,
+        },
+      ],
+    },
+    {
+      id: 5,
+      name: "Nante Aliyah",
+      age: 20,
+      subjects: [
+        {
+          id: 1,
+          name: "Math",
+          score: 78,
+        },
+        {
+          id: 2,
+          name: "English",
+          score: 85,
+        },
+      ],
+    },
+];
+          $(document).ready(function(){
+          $.each(students, function(index, value){
+            $(".card").append("<p>"+students[index].id+"</p>");
+            $(".card").append("<p>"+index.name+"</p>");
+            $(".card").append("<p>"+index.age+"</p>");
+            console.log(students[index])   
+     });
+    
+
+  });
+  
+</script>
+</head> 
+<body>
+ <!-----<div class="main">-->
+    <div class="main">
+    </div>
+ 
+   <!--card-->
+   <div class="card">
+    <div class="des">
+ <p>Student details</p>
+    <div id="result"></div>
+    </div> 
+  </div>
+  <!--card-->
+  <div class="card">
+    <div class="des">
+ <p>Student details</p>
+    <div id="result"></div>
+    </div> 
+  </div>
+  <!--card-->
+  <div class="card">
+    <div class="des">
+ <p>Student details</p>
+    <div id="result"></div>
+    </div> 
+  </div>
+  <!--card-->
+  <div class="card">
+    <div class="des">
+ <p>Student details</p>
+    <div id="result"></div>
+    </div> 
+  </div>
+  <!--card-->
+  <div class="card">
+    <div class="des">
+ <p>Student details</p>
+    <div id="result"></div>
+    </div> 
+  </div>
+  <!--end of main-->  
+</body>
+</html>
