@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="student.css" />
+    <title>Student hub</title>
+</head>
+<body>
+    <div id="main">
+        <div class="topnav">
+            <a class="active" href="registered.html">REGISTERED STUDENTS</a>
+            <a href="student.html">REGISTER STUDENT</a>
+          </div>
+        <div class="one">
+           <div><img src="./c4caf64f-6c45-411c-8dcf-f4ac04339351_200x200.png" width="90" height="70"></div>  
+           <div><h1>STUDENT HUB</h1></div>
+        </div>
+        <div class="two">
+            <h2>REGISTER STUDENT</h1>
+        </div>
+        <div class="form">
+            <form>
+                <label for="fname">First name</label><br>
+                <input type="text" id="fname"><br><br>
+                <label for="lname">Last name</label><br>
+                <input type="text" id="lname"><br><br>
+                <label for="email">Email</label><br>
+                <input type="text" id="email"><br><br>
+                <label for="age">Age</label><br>
+                <input type="number" id="age"><br><br>
+                <button id="btn" value="SAVE"onclick="AddRow()">SAVE</button>
+            </form>
+        </div>
+    </div>
+    <script src="student.js"></script>   
+</body>
+</html>
