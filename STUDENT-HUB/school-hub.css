@@ -1,0 +1,97 @@
+#main{
+background:black;
+}
+.one{
+    display:flex;
+    justify-content:center;
+    margin-top: 10px;
+    background:white;
+    color:goldenrod;
+    width:100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.two, .three{
+    display:flex;
+    justify-content:center;
+    background-color:rgb(31, 47, 53);
+    color:goldenrod; 
+}
+#divLeft{
+    background:white;
+    width:50%;
+    float:left;
+}
+#divRight{
+    background:white;
+    width:50%;
+    float:left;
+}
+.form{
+    display:flex;
+    justify-content:center;
+    border: 1px solid;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 30%; 
+    margin-right: 35%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 45%;
+    background-color:#1761a0 ;
+}
+label{
+    font-family: 'Segoe UI';
+    font-weight:bolder;
+    font-size: 18px;
+}
+#id, #fname, #lname, #email, #age{
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    font-size: 14px;
+}
+#btn{
+    font-family: 'Segoe UI';
+    font-weight:bolder;
+    font-size: 17px;
+    color: rgb(95, 136, 160);
+    border-radius: 13px;
+}
+.tableDiv{
+    display:flex;
+    justify-content:center;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 45%; 
+}
+#table{
+    font:17px serif ;
+    width: 70%;
+    margin-top: 10px;  
+}
+#table, th, td{
+    border: solid 2px #DDD;
+    border-collapse: collapse; padding: 2px 3px; text-align: center;
+}
+th{
+    font-family: 'Segoe UI';
+    font-weight:bolder;
+    font-size: 15px;
+    background-color: #1761a0; 
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+td{
+    font-family: serif;
+    font-weight:bold;
+    font-size: 15px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color:gray; 
+}
+#registered-div{
+    display:flex;
+    justify-content:center;
+    margin-bottom: 20px;
+    
+}

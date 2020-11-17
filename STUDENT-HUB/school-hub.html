@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="school-hub.css" />
+    <title>SGHOOL HUB</title>
+</head>
+<body>
+ <div id="main">
+     <div class="one">
+        <div><img src="./c4caf64f-6c45-411c-8dcf-f4ac04339351_200x200.png" width="90" height="70"></div>  
+        <div><h1>SCHOOL HUB</h1></div>
+     </div>
+     <div id="divLeft">
+  <div class="two">
+    <h2>REGISTER STUDENT</h2>
+  </div>
+<div class="form">
+    <form >
+        <label for="fname">Id</label><br>
+        <input type="number" id="id"><br><br>
+        <label for="fname">First name</label><br>
+        <input type="text" id="fname"><br><br>
+        <label for="lname">Last name</label><br>
+        <input type="text" id="lname"><br><br>
+        <label for="email">Email</label><br>
+        <input type="text" id="email"><br><br>
+        <label for="age">Age</label><br>
+        <input type="number" id="age"><br><br>
+        <input type="button" name="button" id="btn" value="SAVE" onclick="AddRow(); clearInputFields(); ">
+    </form>
+</div>
+     </div>
+     <div id="divRight">
+         <div class="three">
+        <h2>REGISTERED STUDENTS</h2>
+    </div>
+        <div id= "registered-div">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+     </div>
+       <!---->
+     </div>
+ </div>
+ <script src="school-hub.js"></script>
+</body>
+</html>
